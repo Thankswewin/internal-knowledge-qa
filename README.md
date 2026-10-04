@@ -1,43 +1,40 @@
-# Internal Knowledge Q&A Bot
+# Internal Knowledge Q&A
 
-🤖 **LLM-powered assistant for company documents**
+Demonstrates questions and answers against a sample knowledge base with scripted responses.
 
-## Description
-An intelligent Q&A system that indexes company documents into a vector database and uses LLMs to answer employee questions with accurate citations and sources.
+## Status
 
-## Features
-- 🎯 **Accurate Answers**: Responses based on actual company documents
-- 📚 **Citation System**: References to source documents
-- 🔍 **Smart Search**: Natural language document retrieval
-- 🏢 **Role-Based Access**: Different access levels for different teams
-- ⚡ **Real-Time**: Up-to-date information from latest documents
+**Browser-based portfolio demo.** The checked-in `script.js` uses local
+JavaScript, rules, templates or simulated responses. It does not call a hosted
+LLM API or run a trained local model.
 
-## Architecture
-- **Document Ingestion**: PDF, Word, web page processing
-- **Vector Database**: Pinecone/Chroma for semantic search
-- **LLM Integration**: GPT-4, Claude, or other models
-- **Citation Engine**: Source attribution and verification
+A document-ingestion service, vector database, authentication and role-based access are not included.
 
-## Perfect For
-- Enterprise companies
-- HR departments
-- Technical documentation
-- Sales teams
-- Customer support
+## Try It Locally
 
-## Technical Stack
-- **Backend**: FastAPI, Python
-- **Database**: PostgreSQL + Vector Database
-- **AI**: OpenAI/Claude APIs
-- **Frontend**: React/Next.js
+1. Clone this repository.
+2. Open `index.html` in a modern browser.
+3. Use sample or non-sensitive inputs to explore the workflow.
 
-## Getting Started
-```bash
-git clone https://github.com/Thankswewin/internal-knowledge-qa.git
-cd internal-knowledge-qa
-pip install -r requirements.txt
-python app.py
-```
+No npm or Python installation is required for this standalone demo.
+Some fonts or styles may load from external CDNs.
+
+## Repository Layout
+
+| File | Purpose |
+| --- | --- |
+| `index.html` | Interface and page markup |
+| `script.js` | Local workflow and demonstration logic |
+| `styles.css` | Styling |
+
+## Development
+
+A real model integration would be a separate implementation. Keep provider
+credentials on a backend, never in browser JavaScript, and add appropriate
+validation and tests before using the tool with customer data.
 
 ## Author
-**Philemon Ofotan** | GitHub: [@Thankswewin](https://github.com/Thankswewin) | Email: pheelymon@gmail.com
+
+[Philemon Ofotan](https://github.com/Thankswewin), founder of
+[Archyy Studio](https://archyy.live).
+
